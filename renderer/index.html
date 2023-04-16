@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>CSS Sorter</h1>
+
+      <h3>Right now, this converter breaks any @property, sorry.</h3>
+      <div class="converterparent">
+        <textarea 
+          name="codeinput"
+          id="codeinput"
+          cols="30"
+          rows="10"
+          spellcheck="false"
+        ></textarea>
+        <div class="midsection">
+          <div class="button-holder">
+            <button id="sort">Sort</button> <button id="clear">Clear</button>
+          </div>
+
+          <div>
+            <label for="order">Order of properties</label>
+            <select name="order" id="order">
+              <option value="not">Don't order</option>
+              <option value="alpha">Alphabetically</option>
+              <option value="type">By type</option>
+              <option value="lengthdesc">By length(descendant)</option>
+              <option value="lengthasc">By length(ascendant)</option>
+            </select>
+          </div>
+        </div>
+        <textarea
+          name="codeoutput"
+          id="codeoutput"
+          cols="30"
+          rows="10"
+          spellcheck="false"
+        ></textarea>
+      </div>
+    </main>
+
+    <script src="./js/sorter.js"></script>
+    <script src="./js/visual.js"></script>
+    <script src="./js/onload.js"></script>
+  </body>
+</html>
